@@ -1,2 +1,31 @@
-<h1>Space#new</h1>
-<p>Find me in app/views/space/new.html.erb</p>
+
+<%= render 'shared/header' %>
+
+
+<div class="container">
+  <div class="space-new">
+
+    <h2>今日からあなたもコ・ワーキングのオーナーに</h2>
+
+
+
+  <%= form_for @space, :url => {:action => :create} do |f| %>
+
+
+      <li><%= f.label :タイトル %></li>
+
+      <li><%= f.text_field :title %></li>
+
+      <li><%= f.label :場所 %></li>
+
+      <li><%= f.text_field :place %></li>
+
+
+      <%= f.submit '送信' %>
+
+  <% end %>
+
+
+  </div>
+
+</div>

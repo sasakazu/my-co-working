@@ -1,2 +1,32 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+
+<%= render 'shared/header' %>
+
+
+<div class="container">
+
+  <h2>アカウント作成</h2>
+
+  <%= form_for @user do |f| %>
+
+
+    <li><%= f.label :名前 %></li>
+
+    <li><%= f.text_field :name %></li>
+
+
+    <li><%= f.label :メールアドレス %></li>
+
+    <li><%= f.email_field :email %></li>
+
+
+
+  <%= f.submit '送信' %>
+
+
+  <% end %>
+
+
+
+
+</div>
