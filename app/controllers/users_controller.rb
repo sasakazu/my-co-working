@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
 
 def show
+  @user = User.find(params[:id])
 
 end
 
@@ -12,7 +13,7 @@ end
 
 
   def create
-    @user = User.build(user_params)
+    @user = User.create(user_params)
 
     if @user.save
       redirect_to root_path
