@@ -2,28 +2,57 @@
 <%= render 'shared/header' %>
 
 
-<div class="container">
   <div class="space-new">
+    <div class="space-new-top">
 
-    <h2>今日からあなたもコ・ワーキングのオーナーに</h2>
+      <h2>あなたも、<br>今日から、<br>コ・ワーキングスペースのオーナーに！</h2>
 
+    </div>
 
-
-  <%= form_for @space, :url => {:action => :create} do |f| %>
-
-
-      <li><%= f.label :タイトル %></li>
-
-      <li><%= f.text_field :title %></li>
-
-      <li><%= f.label :場所 %></li>
-
-      <li><%= f.text_field :place %></li>
+    <div class="container">
+      <h3>スペース登録をしてみよう。</h3>
 
 
-      <%= f.submit '送信' %>
+      <div class="row space-main">
 
-  <% end %>
+        <div class="col-md-6 space-new-left">
+
+
+
+          <%= form_for @space, :url => {:action => :create} do |f| %>
+
+
+          <li><%= f.label :タイトル %></li>
+
+          <li><%= f.text_field :title %></li>
+
+          <li><%= f.label :場所 %></li>
+
+          <li><%= f.text_field :place %></li>
+
+
+          <%= f.submit '送信' %>
+
+          <% end %>
+
+        </div>
+        <!-- 左 -->
+
+        <div class="col-md-6 space-new-right">
+
+          <div class="bg-inner">
+
+
+          <img src="../assets/adam-griffith-188558.jpg" alt="" class="img-thumbnail">
+
+        </div>
+
+        </div>
+        <!-- 右 -->
+
+      </div>
+      <!-- row -->
+
 
 
   </div>
