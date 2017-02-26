@@ -18,11 +18,42 @@
 
   h1 {
     letter-spacing: 1px;
+    margin-bottom: 100px;
   }
   span {
     color: #FF5A5F !important;
   }
 }
+
+.home-post-roop {
+
+  img {
+    width: 100%;
+    height: 387px;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 5px;
+
+  }
+}
+
+.space-post-box {
+  border: 1px solid #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+// _footer.html.erb
+
 
 
 footer {

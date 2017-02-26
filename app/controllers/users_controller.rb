@@ -2,13 +2,17 @@ class UsersController < ApplicationController
 
 
 
+def show
+
+end
+
   def new
     @user = User.new
   end
 
 
   def create
-    @user = User.create(user_params)
+    @user = User.build(user_params)
 
     if @user.save
       redirect_to root_path
