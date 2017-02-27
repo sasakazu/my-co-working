@@ -19,6 +19,13 @@
 
     <li><%= f.email_field :email %></li>
 
+    <li><%= f.label :パスワード %></li>
+
+    <li><%= f.password_field :password %></li>
+
+    <li><%= f.label :パスワード（確認用） %></li>
+
+    <li><%= f.password_field :password_confirmation %></li>
 
 
   <%= f.submit '送信' %>
@@ -26,7 +33,9 @@
 
   <% end %>
 
-
-
-
 </div>
+
+
+
+
+<%= render 'shared/footer' %>

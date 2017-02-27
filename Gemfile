@@ -27,6 +27,8 @@ gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem "carrierwave"
 gem "font-awesome-rails"
+gem 'bcrypt', '~> 3.1.7'
+
 
 
 
