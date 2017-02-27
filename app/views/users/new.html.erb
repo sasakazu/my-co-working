@@ -5,33 +5,45 @@
 
 <div class="container">
 
-  <h2>アカウント作成</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>新規登録</h2>
 
-  <%= form_for @user do |f| %>
-
-
-    <li><%= f.label :名前 %></li>
-
-    <li><%= f.text_field :name %></li>
+      <%= form_for @user do |f| %>
 
 
-    <li><%= f.label :メールアドレス %></li>
+      <li><%= f.label :名前 %></li>
 
-    <li><%= f.email_field :email %></li>
-
-    <li><%= f.label :パスワード %></li>
-
-    <li><%= f.password_field :password %></li>
-
-    <li><%= f.label :パスワード（確認用） %></li>
-
-    <li><%= f.password_field :password_confirmation %></li>
+      <li><%= f.text_field :name %></li>
 
 
-  <%= f.submit '送信' %>
+      <li><%= f.label :メールアドレス %></li>
+
+      <li><%= f.email_field :email %></li>
+
+      <li><%= f.label :パスワード %></li>
+
+      <li><%= f.password_field :password %></li>
+
+      <li><%= f.label :パスワード（確認用） %></li>
+
+      <li><%= f.password_field :password_confirmation %></li>
 
 
-  <% end %>
+      <%= f.submit '送信' %>
+
+
+      <% end %>
+
+    </div>
+    <!-- col-md-6 -->
+
+    <div class="col-md-6">
+      <h3>ログイン</h3>
+    </div>
+
+  </div>
+<!-- row -->
 
 </div>
 

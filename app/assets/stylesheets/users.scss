@@ -1,3 +1,61 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.user-show-main {
+  background: #f9fbfe;
+  padding-bottom: 80px;
+}
+
+.user-show-detail {
+  background-color: #FFF;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
+
+
+}
+
+.user-show-detail-left {
+
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  img {
+    width: 140px;
+    height: 140px;
+    margin-left: 88px;
+
+  }
+}
+
+.user-name-email {
+  h3, h4 {
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 17px;
+
+  }
+}
+
+.user-show-space {
+  h3 {
+    text-align: center;
+    color: #2b546a;
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: 387px;
+    margin-bottom: 40px;
+
+  }
+}
+
+.user-space-post {
+  margin-bottom: 40px;
+}
