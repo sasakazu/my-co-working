@@ -16,18 +16,18 @@
 
               <div class="col-sm-6">
 
-                <img src="/assets/breather-181290.jpg" alt="..." class="img-circle">
+                <%= image_tag @user.icon, {:class => "img-circle" } %>
 
               </div>
 
               <div class="col-sm-6 user-name-email">
 
                 <div>
-                  <h3>user.name</h3>
+                  <h3><%= @user.name %></h3>
                 </div>
 
                 <div>
-                  <h4>user.email</h4>
+                  <h4><%= @user.email %></h4>
 
                 </div>
 
