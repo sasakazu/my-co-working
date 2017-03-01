@@ -7,9 +7,9 @@ class SpaceController < ApplicationController
   end
 
   def create
-    @space = Space.create(space_params)
+    @spaces = current_user.spaces.build(space_params)
 
-    if @space.save
+    if @spaces.save
       redirect_to root_path
     else
       render 'new'

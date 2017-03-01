@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// show.html.erb
+
+
 .user-show-main {
   background: #f9fbfe;
   padding-bottom: 80px;
@@ -67,4 +70,78 @@
     text-align: center;
     margin-top: 50px;
   }
+}
+
+.user-edit-btn {
+
+    padding-top: 14px;
+
+}
+
+
+// edit.html.erb
+
+.user-edit-main {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  background: #8be0e6;
+
+  img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h2 {
+    color: #666;
+    margin-bottom: 50px;
+
+  }
+
+
+
+}
+
+input[type="file"] {
+  text-align: center;
+  display: block;
+  margin: 18px auto;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 12px 41px;
+    font-size: 16px;
+}
+
+
+input[type="text"] {
+      border: none;
+      outline: none;
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(88, 118, 163);
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 1px solid #dfe4ee;
+
+
+
+
+}
+
+label {
+  color: rgba(88, 118, 163, 0.298039);
+  display: block!important;
+  margin-top: 15px;
+
+}
+
+.user-edit-form {
 }

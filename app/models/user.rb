@@ -5,6 +5,18 @@ class User < ApplicationRecord
   validates :name, presence: true
   has_secure_password
 
+  has_many :spaces
+
+
+
+
+
+
+
+
+
+
+
   # 渡された文字列のハッシュ値を返す
 
     def User.digest(string)
