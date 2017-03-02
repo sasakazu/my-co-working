@@ -28,6 +28,8 @@ gem 'pg', group: :production
 gem "carrierwave"
 gem "font-awesome-rails"
 gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate',           '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 
 

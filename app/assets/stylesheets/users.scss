@@ -75,6 +75,7 @@
 .user-edit-btn {
 
     padding-top: 14px;
+    margin-left: 55px;
 
 }
 
@@ -85,7 +86,7 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 200px;
-  background: #8be0e6;
+  background: #F9FBFE;
 
   img {
     width: 140px;
@@ -103,45 +104,45 @@
 
   }
 
+  input[type="file"] {
+    text-align: center;
+    display: block;
+    margin: 18px auto;
+  }
 
-
-}
-
-input[type="file"] {
-  text-align: center;
-  display: block;
-  margin: 18px auto;
-}
-
-input[type="submit"] {
+  input[type="submit"] {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-    padding: 12px 41px;
+    margin-top: 111px;
+    padding: 12px 71px;
     font-size: 16px;
+  }
+
+
+  input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(88, 118, 163);
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #dfe4ee;
+
+
+
+
+  }
+
+  label {
+    color: rgba(88, 118, 163, 0.298039);
+    display: block!important;
+    margin-top: 15px;
+
+  }
+
+
 }
 
-
-input[type="text"] {
-      border: none;
-      outline: none;
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(88, 118, 163);
-      text-align: center;
-      font-size: 18px;
-      border-bottom: 1px solid #dfe4ee;
-
-
-
-
-}
-
-label {
-  color: rgba(88, 118, 163, 0.298039);
-  display: block!important;
-  margin-top: 15px;
-
-}
 
 .user-edit-form {
 }

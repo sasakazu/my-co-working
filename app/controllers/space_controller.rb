@@ -10,7 +10,7 @@ class SpaceController < ApplicationController
     @spaces = current_user.spaces.build(space_params)
 
     if @spaces.save
-      redirect_to root_path
+      redirect_to current_user
     else
       render 'new'
 
@@ -18,6 +18,7 @@ class SpaceController < ApplicationController
   end
 
   def show
+    @space = Space.find(params[:id])
   end
 
   def edit
