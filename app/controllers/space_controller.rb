@@ -19,6 +19,9 @@ class SpaceController < ApplicationController
 
   def show
     @space = Space.find(params[:id])
+    @user = Space.find(params[:id])
+
+    # @user = Space.find(:user_id)＞＞＞＞＞わからん
   end
 
   def edit
@@ -28,7 +31,7 @@ class SpaceController < ApplicationController
   private
 
     def space_params
-      params.require(:space).permit(:title, :place, :image)
+      params.require(:space).permit(:title, :place, :image, :user_id )
 
     end
 

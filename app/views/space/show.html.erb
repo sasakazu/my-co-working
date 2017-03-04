@@ -5,17 +5,35 @@
   <div class="space-show-main">
 
         <div class="space-show-image">
-          <img src="../assets/adam-griffith-188558.jpg" alt="" class="">
+          <%= image_tag @space.image %>
+
         </div>
 
           <div class="container">
+            <div class="space-show-title">
+              <h2>概要</h2>
+            </div>
+
+            <div class="row space-show-detail">
+              
+              <div class="space-show-detail-left col-md-5">
+                <img src="/assets/adam-griffith-188558.jpg" alt="" class="img-circle">
+              </div>
+
+              <div class="space-show-detail-right col-md-7">
+                  <h2><%= @space.title %></h2>
+                  <p><%= @space.place %></p>
+              </div>
 
 
 
-            <h2>概要</h2>
+            </div>
+
+
+
 
          </div>
-
+      <!-- container -->
 
 
   </div>

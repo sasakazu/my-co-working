@@ -80,5 +80,33 @@
   }
 }
 
-.space-show-main {
+.space-show-title {
+
+
+  h2 {
+    margin-top: 50px;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
+  }
+}
+
+
+.space-show-detail-left {
+
+  img {
+
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  }
+
+
+}
+
+.space-show-detail-right {
+  h2 {
+    color: #484848;
+  }
 }
