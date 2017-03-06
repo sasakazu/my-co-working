@@ -10,7 +10,7 @@
 
 .space-new {
 
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 
   h2 {
     margin-top: 50px;
@@ -71,6 +71,9 @@
 
 // show.html.erb
 
+.space-show-main {
+  margin-bottom: 10px;
+}
 
 
 .space-show-image {
@@ -92,6 +95,8 @@
 
 
 .space-show-detail-left {
+  text-align: center;
+  
 
   img {
 
@@ -109,4 +114,9 @@
   h2 {
     color: #484848;
   }
+}
+
+.space-show-detail {
+  border-bottom: 1px solid #ccc;
+
 }
